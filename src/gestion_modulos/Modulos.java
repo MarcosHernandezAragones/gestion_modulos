@@ -6,6 +6,8 @@ public class Modulos {
 	private String codigo;
 	private int numHoras;
 	
+	
+	
 	public Modulos(String nombre, String codigo, int numHoras) {
 		this.nombre = nombre;
 		this.codigo = codigo;
@@ -38,7 +40,7 @@ public class Modulos {
 
 	@Override
 	public String toString() {
-		return "Modulo [nombre=" + nombre + ", codigo=" + codigo + ", numHoras=" + numHoras + "]";
+		return "Modulo nombre " + nombre + ", codigo " + codigo + ", numHoras " + numHoras;
 	}
 	
 }
