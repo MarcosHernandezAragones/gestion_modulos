@@ -4,31 +4,43 @@ import java.util.Scanner;
 
 public class Principal {
 
-	public static void main(String[] args) {
+	public static int pintaMenu(){
 		
+		 Scanner leer = new Scanner(System.in);
+		 boolean interruptor = true;
+		 int opc=0;
 		
-		int aux=0;
-		
-		Modulos vModulos[] = new Modulos[10];
-		
-		Scanner leer = new Scanner(System.in);
-		
-		
-		
-		vModulos[0]= new Modulos("Programación", "PRG", 300);
-		vModulos[1]= new Modulos("Sistemas Informaticos", "SI", 300);
-		vModulos[2]= new Modulos("Lenguaje de Marcas", "LM", 300);
-		
-		
-		for (Modulos m : vModulos) {
-			if (m != null)  {
-				aux=m.getNumHoras()+aux;
-				System.out.println(m);
-			}
-		}
-		System.out.println("Numero de horas total: " + aux);
-		
+			do {
 				
+				System.out.println("1 para añadir un modulo");
+				System.out.println("2 para mostrar los modulos");
+				System.out.println("3 para consultar las horas");
+				System.out.println("4 para salir de la aplicacion");
+				System.out.println("");
+				System.out.println("Dame una opcion");
+				try {
+					opc = leer.nextInt();
+				} catch (Exception e) {
+					System.out.println("Opcion no valida");
+					leer = new Scanner(System.in);
+					interruptor =false;
+				}
+				
+			} while (interruptor ==false);
+		
+		
+		
+		return opc;
+	}
+
+	public static void main(String[] args) {
+
+		pintaMenu();
+
+		//Curso c = new Curso("1ºDAW", "José Micolau");
+
+		//System.out.println(c.toString());
+
 	}
 
 }

@@ -40,7 +40,7 @@ public class Modulos {
 
 	@Override
 	public String toString() {
-		return "Modulo nombre " + nombre + ", codigo " + codigo + ", numHoras " + numHoras;
+		return "Modulo " + nombre + ", codigo " + codigo + ", numHoras " + numHoras;
 	}
 	
 }
