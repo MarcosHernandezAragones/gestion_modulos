@@ -3,7 +3,11 @@ package gestion_modulos;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Modulos m = new Modulos("Programación", "PRG", 300);
+		
+		System.out.println(m.toString());
+		System.out.println("Numero de horas del ciclo: " + m.getNumHoras());
 
 	}
 
