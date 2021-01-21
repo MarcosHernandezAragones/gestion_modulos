@@ -27,6 +27,15 @@ public class Principal {
 				}
 				
 			} while (interruptor ==false);
+			
+			switch (opc) {
+			case 1:
+				
+				break;
+
+			default:
+				break;
+			}
 		
 		
 		
@@ -36,8 +45,10 @@ public class Principal {
 	public static void main(String[] args) {
 
 		pintaMenu();
+		
+		
 
-		//Curso c = new Curso("1ºDAW", "José Micolau");
+		//Curso c = new Curso("1�DAW", "José Micolau");
 
 		//System.out.println(c.toString());
 
